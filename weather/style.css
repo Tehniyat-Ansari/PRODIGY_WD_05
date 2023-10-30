@@ -1,0 +1,43 @@
+body{
+    background-color: #8AB6D6 !important;
+}
+.navbar{
+    background-color: #0061A8;
+}
+.navbar .navbar-brand{
+    font-size: 30px !important;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #A7ECEE !important;
+    font-weight: 700;
+}
+.main{
+    background-color: #378ac94b;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.main:hover{
+    cursor: pointer;
+}
+h1{
+    color: #0061A8;
+    letter-spacing: 5px;
+}
+img{
+    width: 100px;
+}
+
+.location-not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location-not-found h1{
+    font-size: 20px;
+    margin-block-end: 0px;
+}
+.location-not-found img{
+    width: 300px;
+}

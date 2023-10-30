@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyAlert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <span class="navbar-brand">SkyAlert</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">News</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="m-3 text-center animate__animated animate__fadeIn">Welcome to SkyAlert</h1>
+    
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="main rounded p-5">
+                    <div class="input-group mb-3">
+                        <input type="text" class="input-box form-control" placeholder="Enter City or Country" aria-label="Recipient's username">
+                        <div class="input-group-append">
+                            <button class="btn search-btn border-white text-light" type="button"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="location-not-found text-light">
+                        <h2>Sorry, Location not found!!!</h2>
+                        <img src="imgs/404.png" alt="404 Error">
+                    </div>
+                    <div class="row weather-info text-light" style="display: none;">
+                            <div class="col-5 col-md-4 weather-body text-center my-auto">
+                                <img src="imgs/cloud.png" alt="cloud" class="weather-img">
+                            </div>
+                            <div class="col-7 col-md-4 my-auto">
+                                <div class="weather-box">
+                                    <h2 class="temp"></h2>
+                                    <h4 class="description text-light"></h4>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="row pt-4">
+                                    <div class="col-3"><i class="bi bi-droplet-fill float-right"></i></div>
+                                    <div class="col-9">
+                                        <span class="h6 humidity"></span>
+                                        <span class="h6">Humidity</span>
+                                    </div>
+                                </div>
+                                <div class="row py-3">
+                                    <div class="col-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wind float-right" viewBox="0 0 16 16">
+                                            <path d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="col-9">
+                                        <span class="h6 speed"></span><br>
+                                        <span class="h6">Wind Speed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
